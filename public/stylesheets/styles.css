@@ -1,0 +1,23 @@
+/* .thumbnail img{
+	width:100%;
+} */
+.thumbnail{
+	padding:0;
+}
+body{
+	background-image: url("https://images.unsplash.com/photo-1487147264018-f937fba0c817?ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80");
+	
+}
+.thumbnail .caption-full {
+	padding:9px;
+}
+@media (min-width: 768px) {
+        .thumbnail img {
+            object-fit: cover;
+            height: 200px:
+            width: 100%;
+        }
+    }
+.delete-form{
+	display:inline;
+}
