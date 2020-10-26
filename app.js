@@ -16,9 +16,10 @@ const commentRoutes= require("./routes/comments"),
 	  indexRoutes=require("./routes/index");
 //seed the database
 // seedDB();
-//mongodb://localhost:27017/yelp_camp
+//
+let url= process.env.DATABASEURL||"mongodb://localhost:27017/yelp_camp"
 //'mongodb+srv://naved:Motobomb1!duck@cluster0.ybdkw.mongodb.net/<dbname>?retryWrites=true&w=majority'
-mongoose.connect(process.env.DATABASEURL, {
+mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
